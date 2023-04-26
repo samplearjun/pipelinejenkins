@@ -1,5 +1,5 @@
 pipeline {
-   agent {
+   node (label: 'slave') {
         label 'slave'
         docker {
             image 'maven:3.9.0-eclipse-temurin-11' 
